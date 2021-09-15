@@ -1,0 +1,80 @@
+.line-up {
+    background-color: $rosa;
+    display: block;
+    padding: 3rem;
+    .line-upTables {
+        display: grid;
+        gap: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        .escenario-EDM {
+            margin: 1rem;
+            background-color: $verde;
+            grid-column: 2/2;
+            max-width: 460px;
+            filter: brightness(0.9);
+            h3 {
+                margin: 1rem;
+                color: $negro;
+            }
+            .iconoEDM {
+                display: flex;
+                margin: 1rem auto;
+                width: 20%;
+                min-width: 80px;
+            }
+        }
+        .escenario-Rock {
+            margin: 1rem;
+            background-color: $amarillo;
+            grid-column: 1/2;
+            max-width: 460px;
+            filter: brightness(0.9);
+            h3 {
+                margin: 1rem;
+                color: $negro;
+            }
+            .iconoRock {
+                display: flex;
+                margin: 1rem auto;
+                width: 20%;
+                min-width: 80px;
+            }
+        }
+    }
+    h3 {
+        display: flex;
+        margin: 0;
+        font-weight: $delgada;
+        color: $blanco;
+        justify-content: center;
+    }
+}
+
+.listaConciertosRock {
+    list-style: none;
+    padding: 0;
+    li {
+        background-color: $amarillo;
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+.listaConciertosEDM {
+    list-style: none;
+    padding: 0;
+    li {
+        background-color: $verde;
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+.dark {
+    filter: brightness(0.8);
+}
+
+.light {
+    filter: brightness(1.3);
+}

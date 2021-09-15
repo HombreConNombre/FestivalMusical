@@ -1,0 +1,35 @@
+.video {
+    position: relative;
+    max-height: 90rem;
+    overflow: hidden;
+    .overlayVideo {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient( to top, #be49a3f1, rgba(255, 255, 255, .5))
+    }
+    video {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.contenido-video {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: $blanco;
+        margin: 2rem;
+        span {
+            background-color: $rosa;
+            padding: 1rem;
+            border-radius: 1rem;
+            font-size: 1rem;
+        }
+    }
+}

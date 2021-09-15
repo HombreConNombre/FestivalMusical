@@ -1,0 +1,30 @@
+.articulo {
+    @include grid(2);
+    width: 100%;
+    gap: 5rem;
+    background-color: $amarillo;
+    align-items: center;
+    .contenedor-img {
+        margin: 1rem;
+        grid-column: 1/2;
+    }
+    img {
+        margin: $separacion;
+        width: 100%;
+    }
+    .texto-articulo {
+        margin: $separacion;
+        display: block;
+        grid-column: 2/2;
+    }
+    .titulo-articulo {
+        margin: 0;
+    }
+    .fecha-articulo {
+        color: $rosa;
+        font-weight: $negrita;
+    }
+    .cuerpo-articulo {
+        margin: 0;
+    }
+}

@@ -1,0 +1,42 @@
+.header {
+    background-color: $verde;
+    padding: 0 auto;
+    .contenido-header {
+        padding: 2.5rem 0;
+        display: grid;
+        grid-template-columns: (3, 1fr);
+        @include telefono {
+            padding: 2.5rem 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+    h1 {
+        color: $blanco;
+    }
+}
+
+.navegacion-principal {
+    @media (max-width: 800px) {
+        margin-top: 1rem;
+        display: grid;
+        align-items: center;
+        margin: 1rem auto;
+        margin-bottom: 0;
+        width: 100%;
+        text-align: center;
+        grid-template-rows: (3, 1fr);
+    }
+    @include telefono {
+        display: flex;
+        gap: 2rem;
+    }
+    a {
+        color: $blanco;
+        text-decoration: none;
+        &:hover {
+            color: $amarillo;
+        }
+    }
+}

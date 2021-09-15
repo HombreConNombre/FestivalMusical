@@ -1,4 +1,10 @@
 @import 'normalize';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,200&display=swap');
 @import 'variables';
+@import 'mixins';
 @import 'globales';
+@import './layout/header';
+@import './layout/video';
+@import './layout/articulo';
+@import './layout/line-up';
+@import './layout/galeria';

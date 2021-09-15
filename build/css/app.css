@@ -353,7 +353,262 @@ body {
   font-family: "Arial";
   font-size: 1.6rem;
 }
+body.fijar-body {
+  overflow: hidden;
+}
 
 p {
+  font-size: 1.75rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
   font-size: 2rem;
+}
+
+.header {
+  background-color: #4CB8B3;
+  padding: 0 auto;
+}
+.header .contenido-header {
+  padding: 2.5rem 0;
+  display: grid;
+  grid-template-columns: 3, 1fr;
+}
+@media (min-width: 800px) {
+  .header .contenido-header {
+    padding: 2.5rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+.header h1 {
+  color: #FFF;
+}
+
+@media (max-width: 800px) {
+  .navegacion-principal {
+    margin-top: 1rem;
+    display: grid;
+    align-items: center;
+    margin: 1rem auto;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+    grid-template-rows: 3, 1fr;
+  }
+}
+@media (min-width: 800px) {
+  .navegacion-principal {
+    display: flex;
+    gap: 2rem;
+  }
+}
+.navegacion-principal a {
+  color: #FFF;
+  text-decoration: none;
+}
+.navegacion-principal a:hover {
+  color: #fff34b;
+}
+
+.video {
+  position: relative;
+  max-height: 90rem;
+  overflow: hidden;
+}
+.video .overlayVideo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #be49a3f1, rgba(255, 255, 255, 0.5));
+}
+.video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.contenido-video {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.contenido-video h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #FFF;
+  margin: 2rem;
+}
+.contenido-video h2 span {
+  background-color: #F53756;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+.articulo {
+  display: grid;
+  grid-template-columns: repeat(2 0.1fr);
+  width: 100%;
+  gap: 5rem;
+  background-color: #fff34b;
+  align-items: center;
+}
+.articulo .contenedor-img {
+  margin: 1rem;
+  grid-column: 1/2;
+}
+.articulo img {
+  margin: 5rem;
+  width: 100%;
+}
+.articulo .texto-articulo {
+  margin: 5rem;
+  display: block;
+  grid-column: 2/2;
+}
+.articulo .titulo-articulo {
+  margin: 0;
+}
+.articulo .fecha-articulo {
+  color: #F53756;
+  font-weight: 700;
+}
+.articulo .cuerpo-articulo {
+  margin: 0;
+}
+
+.line-up {
+  background-color: #F53756;
+  display: block;
+  padding: 3rem;
+}
+.line-up .line-upTables {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+.line-up .line-upTables .escenario-EDM {
+  margin: 1rem;
+  background-color: #4CB8B3;
+  grid-column: 2/2;
+  max-width: 460px;
+  filter: brightness(0.9);
+}
+.line-up .line-upTables .escenario-EDM h3 {
+  margin: 1rem;
+  color: #000;
+}
+.line-up .line-upTables .escenario-EDM .iconoEDM {
+  display: flex;
+  margin: 1rem auto;
+  width: 20%;
+  min-width: 80px;
+}
+.line-up .line-upTables .escenario-Rock {
+  margin: 1rem;
+  background-color: #fff34b;
+  grid-column: 1/2;
+  max-width: 460px;
+  filter: brightness(0.9);
+}
+.line-up .line-upTables .escenario-Rock h3 {
+  margin: 1rem;
+  color: #000;
+}
+.line-up .line-upTables .escenario-Rock .iconoRock {
+  display: flex;
+  margin: 1rem auto;
+  width: 20%;
+  min-width: 80px;
+}
+.line-up h3 {
+  display: flex;
+  margin: 0;
+  font-weight: 300;
+  color: #FFF;
+  justify-content: center;
+}
+
+.listaConciertosRock {
+  list-style: none;
+  padding: 0;
+}
+.listaConciertosRock li {
+  background-color: #fff34b;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.listaConciertosEDM {
+  list-style: none;
+  padding: 0;
+}
+.listaConciertosEDM li {
+  background-color: #4CB8B3;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.dark {
+  filter: brightness(0.8);
+}
+
+.light {
+  filter: brightness(1.3);
+}
+
+.galeria {
+  background-color: #752F97;
+}
+.galeria .galeria-imagenes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem;
+  list-style-type: none;
+}
+.galeria .galeria-imagenes .fotoConciertos {
+  width: 90%;
+  margin: 1rem;
+  grid-auto-columns: auto;
+}
+.galeria .galeria-titulo {
+  margin: 0 auto;
+  padding-top: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: grid;
+  place-items: center;
+}
+
+.botonCerrar {
+  padding: 1rem;
+  background-color: #FFF;
+  border-radius: 1rem;
+}
+.botonCerrar:hover {
+  cursor: pointer;
 }

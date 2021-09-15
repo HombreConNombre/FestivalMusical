@@ -1,0 +1,41 @@
+.galeria {
+    background-color: $morada;
+    .galeria-imagenes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        align-items: center;
+        padding: 3rem;
+        list-style-type: none;
+        .fotoConciertos {
+            width: 90%;
+            margin: 1rem;
+            grid-auto-columns: auto;
+        }
+    }
+    .galeria-titulo {
+        margin: 0 auto;
+        padding-top: 3rem;
+        font-weight: $negra;
+        text-align: center;
+    }
+}
+
+.overlay {
+    position: fixed;
+    background-color: rgba($color: #000000, $alpha: .5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: grid;
+    place-items: center;
+}
+
+.botonCerrar {
+    padding: 1rem;
+    background-color: $blanco;
+    border-radius: 1rem;
+    &:hover {
+        cursor: pointer;
+    }
+}
