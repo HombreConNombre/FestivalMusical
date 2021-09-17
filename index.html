@@ -20,7 +20,7 @@
             </nav>
         </div>
     </header>
-    <div class="video">
+    <section class="video">
         <div class="overlayVideo">
             <div class="contenedor contenido-video">
                 <h2>
@@ -30,12 +30,12 @@
             </div>
         </div>
         <video autoplay loop>
-            <source src="video/concierto.mp4" type="video/mp4">
-            <source src="video/concierto.ogg" type="video/ogg">
-            <source src="video/concierto.webm" type="video/webm">
+            <source src="build/video/concierto.mp4" type="video/mp4">
+            <source src="build/video/concierto.ogg" type="video/ogg">
+            <source src="build/video/concierto.webm" type="video/webm">
         </video>
-    </div>
-    <div>
+    </section>
+    <section>
         <div class="contenedor articulo">
             <div class="contenedor-img">
                 <img src="./src/img/imagen_vocalista.jpg" alt="imagen articulo central">
@@ -54,8 +54,8 @@
                 </p>
             </div>
         </div>
-    </div>
-    <div class="contenedor line-up">
+    </section>
+    <section class="contenedor line-up">
         <h3>VIERNES 17</h3>
         <div class="line-upTables">
             <div class="escenario-Rock">
@@ -72,8 +72,10 @@
                 <h3>Escenario EDM</h3>
                 <img src="src/img/icono_edm.png" alt="icono EDM" class="iconoEDM">
                 <ul class="listaConciertosEDM">
-                    <li class="light">KKK</li>
-                    <li class="dark">PPP</li>
+                    <li class="light">00:00 | Zedd</li>
+                    <li class="dark">01:15 | DJ Snake</li>
+                    <li class="light">02:30 | Jack Ü</li>
+                    <li class="dark">03:45 | Ricarda79</li>
                 </ul>
             </div>
         </div>
@@ -100,14 +102,74 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="galeria">
+    </section>
+    <section class="galeria">
         <h2 class="galeria-titulo">Galería</h2>
         <ul class="galeria-imagenes">
-
         </ul>
-    </div>
+    </section>
+    <section class="tarifas">
+        <h2 class="tituloTarifas">TARIFAS</h2>
+        <div class="tablastarifas">
+            <table class="tablaTarifas ">
+                <tr class="tipoTarifa tituloTarifas">
+                    <th>Entrada estandar</th>
+                </tr>
+                <tr class="ventajaTarifa">
+                    <td>
+                        Entrada a todos los conciertos
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Barra americana
+                    </td>
+                </tr>
+                <tr>
+                    <td class="precioTarifa ">
+                        Contratar por 100€
+                    </td>
+                </tr>
+            </table>
+            <table class="tablaTarifas ">
+                <tr class="tipoTarifa tituloTarifas">
+                    <th>Entrada PREMIUM</th>
+                </tr>
+                <tr>
+                    <td>
+                        Entrada a todos los conciertos
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Barra americana
+                </tr>
+                </td>
+                <tr>
+                    <td>
+                        Camiseta exclusiva
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hotel 3* (4 noches)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="precioTarifa  precioPremium">
+                        Contratar por 160€
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
     <script src="build/js/bundle.js"></script>
+
+    <footer class="pie">
+        <p class="derechos">
+            <img src="build/src/img/copyright.webp" alt="copyright" class="copyright"> Todos los derechos reservados según copyright 2020 a ROCK & EDM Festival
+        </p>
+    </footer>
 </body>
 
 </html>

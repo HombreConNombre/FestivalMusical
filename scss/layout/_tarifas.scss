@@ -1,0 +1,40 @@
+.tarifas {
+    background-color: $verde;
+    text-align: center;
+    min-height: 550px;
+    .tituloTarifas {
+        color: $blanco;
+        margin: 0;
+        padding: 1rem;
+    }
+    .tablastarifas {
+        display: flex;
+        height: 100%;
+        min-height: 400px;
+        justify-content: space-evenly;
+        .tablaTarifas {
+            margin: 1rem;
+            min-width: 400px;
+            background-color: $blanco;
+            .tipoTarifa {
+                background-color: $rosa;
+                font-weight: $negrita;
+                padding: 0;
+            }
+            .ventajaTarifa {
+                padding: 1rem;
+            }
+            .precioTarifa {
+                background-color: $morada;
+                cursor: pointer;
+                color: $blanco;
+                &:hover {
+                    filter: brightness(.8);
+                }
+            }
+            .precioPremium {
+                padding: 1rem;
+            }
+        }
+    }
+}

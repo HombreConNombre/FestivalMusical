@@ -580,6 +580,7 @@ h3 {
   gap: 2rem;
   align-items: center;
   padding: 3rem;
+  margin-bottom: 0;
   list-style-type: none;
 }
 .galeria .galeria-imagenes .fotoConciertos {
@@ -611,4 +612,56 @@ h3 {
 }
 .botonCerrar:hover {
   cursor: pointer;
+}
+
+.tarifas {
+  background-color: #4CB8B3;
+  text-align: center;
+  min-height: 550px;
+}
+.tarifas .tituloTarifas {
+  color: #FFF;
+  margin: 0;
+  padding: 1rem;
+}
+.tarifas .tablastarifas {
+  display: flex;
+  height: 100%;
+  min-height: 400px;
+  justify-content: space-evenly;
+}
+.tarifas .tablastarifas .tablaTarifas {
+  margin: 1rem;
+  min-width: 400px;
+  background-color: #FFF;
+}
+.tarifas .tablastarifas .tablaTarifas .tipoTarifa {
+  background-color: #F53756;
+  font-weight: 700;
+  padding: 0;
+}
+.tarifas .tablastarifas .tablaTarifas .ventajaTarifa {
+  padding: 1rem;
+}
+.tarifas .tablastarifas .tablaTarifas .precioTarifa {
+  background-color: #752F97;
+  cursor: pointer;
+  color: #FFF;
+}
+.tarifas .tablastarifas .tablaTarifas .precioTarifa:hover {
+  filter: brightness(0.8);
+}
+.tarifas .tablastarifas .tablaTarifas .precioPremium {
+  padding: 1rem;
+}
+
+.pie {
+  background-color: #AAA;
+}
+.pie .derechos {
+  padding: 0;
+  margin: 0;
+}
+.pie .derechos .copyright {
+  width: 1%;
 }
