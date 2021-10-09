@@ -6,7 +6,7 @@ function crearGaleria() {
     const galeria = document.querySelector('.galeria-imagenes');
     for (let i = 1; i <= 12; i++) {
         const imagen = document.createElement('IMG');
-        imagen.src = 'build/src/img/thumb/' + i + '.webp';
+        imagen.src = 'src/img/thumb/' + i + '.webp';
         const lista = document.createElement('LI');
         lista.appendChild(imagen);
         galeria.appendChild(lista);
@@ -20,7 +20,7 @@ function crearGaleria() {
 function ampliarImagen(e) {
     const id = parseInt(e.target.dataset.imagenID);
     const imagen = document.createElement('IMG');
-    imagen.src = 'build/src/img/grande/' + id + '.webp';
+    imagen.src = 'src/img/grande/' + id + '.webp';
 
     const overlay = document.createElement('DIV');
     overlay.appendChild(imagen);
@@ -41,7 +41,6 @@ function ampliarImagen(e) {
 
     cerrarImagen.onclick =
         function() {
-            console.log("HOLIWI");
             overlay.remove();
             body.classList.remove('fijar-body');
         }
